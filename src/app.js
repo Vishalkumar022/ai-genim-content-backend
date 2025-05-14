@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser"
 const app=express()
 
 app.use(cors({
-    origin:"*",
+    origin:["http://localhost:5173","https://ai-genim-content.vercel.app"],
     credentials:true
 }))
 app.use(express.json({limit:"16kb"}))
